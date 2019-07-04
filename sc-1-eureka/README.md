@@ -6,13 +6,6 @@ typora-copy-images-to: ../README_images/image4eureka
 
 # spring-cloud-examples
 
-# 参考：
-1. 慕课网 Spring Cloud 廖师兄
-2. http://www.ityouknow.com/,  https://github.com/ityouknow/spring-cloud-examples
-3. 《史上最简单的Spring Cloud教程源码》 https://github.com/yafey/SpringCloudLearning
-  - [史上最简单的 SpringCloud 教程 | 第一篇: 服务的注册与发现（Eureka）(Finchley版本)](http://blog.csdn.net/forezp/article/details/81040925)
-  - [史上最简单的SpringCloud教程 | 第十篇: 高可用的服务注册中心(Finchley版本)](http://blog.csdn.net/forezp/article/details/81041101)
-
 # 说明
 Spring Boot版本2.1.6.RELEASE,Spring Cloud版本为Greenwich.SR1。
 这个pom文件作为父pom文件，起到依赖版本控制的作用，其他module工程继承该pom。这一系列文章全部采用这种模式，其他文章的pom跟这个pom一样。再次说明一下，以后不再重复引入。
@@ -21,6 +14,11 @@ Spring Boot版本2.1.6.RELEASE,Spring Cloud版本为Greenwich.SR1。
 
 # Eureka 模块说明
 > 精简自 ： [史上最简单的 SpringCloud 教程 | 第一篇： 服务的注册与发现Eureka(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040925)
+1. 慕课网 Spring Cloud 廖师兄
+2. http://www.ityouknow.com/,  https://github.com/ityouknow/spring-cloud-examples
+3. 《史上最简单的Spring Cloud教程源码》 https://github.com/yafey/SpringCloudLearning
+	- [史上最简单的 SpringCloud 教程 | 第一篇: 服务的注册与发现（Eureka）(Finchley版本)](http://blog.csdn.net/forezp/article/details/81040925)
+	- [史上最简单的SpringCloud教程 | 第十篇: 高可用的服务注册中心(Finchley版本)](http://blog.csdn.net/forezp/article/details/81041101)
 
 
 ## 创建 eureka-server 步骤
@@ -50,7 +48,6 @@ Spring Boot版本2.1.6.RELEASE,Spring Cloud版本为Greenwich.SR1。
    - `UNKNOWN` --> 添加 `spring.application.name`
    - (Optional) client 的 status 处自定义链接：配置 `eureka.instance.hostname` 。
    - client 不停重启 , eureka 会出现红色警告，见 server 端的配置 （关掉自我保护）。
-
 
 
 ## 高可用 Eureka 注册中心（集群）
